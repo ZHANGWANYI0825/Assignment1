@@ -32,4 +32,7 @@ if __name__ == "__main__":
     output = r"C:\Users\lenovo\assignment1\respondent_cleaned.csv"
 
     clean_data(input1, input2, output)
+    output_df = pd.read_csv(output)
+    num_rows, num_columns = output_df.shape
+    print("Shape of the output file: ", num_rows, "rows", num_columns, "columns")
 
